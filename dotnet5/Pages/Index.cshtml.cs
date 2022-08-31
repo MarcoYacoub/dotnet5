@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using Models.Models;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ namespace dotnet5.Pages
 {
     public class IndexModel : PageModel
     {
-        public User user { get; set; }
+        //public User user { get; set; }
         private readonly ILogger<IndexModel> _logger;
 
         public IndexModel(ILogger<IndexModel> logger)
@@ -21,13 +21,13 @@ namespace dotnet5.Pages
 
         public void OnGet()
         {
-            user = new User
-            {
-                age = 15,
-                Id = 15,
-                Name = "15 string"
+            //user = new User
+            //{
+            //    age = 15,
+            //    Id = 15,
+            //    Name = "15 string"
 
-            };
+            //};
         }
     }
 }
